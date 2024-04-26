@@ -136,8 +136,7 @@ nav a:hover {
                  0 0 30px #ff9900, /* Aumentar la intensidad del brillo */
                  0 0 35px #ff9900; /* Aumentar la intensidad del brillo */
     animation: pulsate 2s infinite; /* Agregar animación pulsante */
-    margin-right: 10px; /* Agregar espacio entre "BookFlow" y el texto siguiente */
-
+    
 }
 
 
@@ -168,17 +167,26 @@ nav a:hover {
 }
 
 
-
 /* Estilos de la sección integrantes */
 .integrantes {
-    padding: 5rem 0;
-    background-color: #FFA726;
+    padding: 9rem 0;
+    background-color: black; /* Cambio del color de fondo a negro */
     text-align: center;
+    font-family: 'Roboto', sans-serif;
 }
 
 .integrantes .titulo {
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
+    font-size: 4.5rem;
+    font-weight: bold;
+    color: black; /* Cambiar el color a negro */
+    display: inline-block; /* Asegurar que ocupe solo el espacio necesario */
+    text-shadow: 0 0 5px #ff9900, /* Agregar sombra naranja */
+                 0 0 10px #ff9900, /* Aumentar la intensidad del brillo */
+                 0 0 15px #ff9900, /* Aumentar la intensidad del brillo */
+                 0 0 20px #ff9900, /* Aumentar la intensidad del brillo */
+                 0 0 25px #ff9900, /* Aumentar la intensidad del brillo */
+                 0 0 30px #ff9900, /* Aumentar la intensidad del brillo */
+                 0 0 35px #ff9900; /* Aumentar la intensidad del brillo */
 }
 
 .integrantes .caja-texto {
@@ -187,13 +195,12 @@ nav a:hover {
     max-width: 60%;
     margin: 0 auto;
     margin-bottom: 1.5rem;
+    color: #cdcdcd;
+    padding: 20px; /* Agregar relleno para separar el texto del borde */
+    box-shadow: 0 10px 20px rgb(255, 115, 0); /* Agregar sombra blanca */
 }
 
-.integrantes .imagenes-participantes {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
+
 
 .integrantes .imagenes-participantes img {
     width: 140px;
@@ -201,80 +208,120 @@ nav a:hover {
     border-radius: 50%;
     object-fit: cover;
     margin: 1rem;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5), /* Sombra blanca interna */
+                0 0 20px rgba(255, 255, 255, 0.5) inset, /* Sombra blanca interna */
+                0 0 20px rgba(255, 255, 255, 0.5); /* Sombra blanca externa */
+    transition: box-shadow 0.3s ease-in-out; /* Agregar transición para el efecto de palpitar */
 }
 
+.integrantes .imagenes-participantes img:hover {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.7), /* Aumentar el brillo al hacer hover */
+                0 0 40px rgba(255, 255, 255, 0.7) inset, /* Aumentar el brillo al hacer hover */
+                0 0 40px rgba(255, 255, 255, 0.7); /* Aumentar el brillo al hacer hover */
+}
+
+/*dddddd*/
 .Catalogo {
-    display: flex;
     justify-content: center;
     padding: 5rem 0;
-    background-color: #FFA726;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/Imagenes/fondo1.jpg); 
+    background-color: #f5f5f5;
 }
 
-.Catalogo .contenedor1,
-.Catalogo .contenedor-audiolibro {
+.contenedor1 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-right: 1rem;
 }
 
-.Catalogo .contenedor1 img,
-.Catalogo .contenedor-audiolibro img {
-    width: 200px;
+.contenedor2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 1rem;
+}
+
+.titulo {
+    display: flex;
+    align-items: center; /* Asegura que todo esté alineado verticalmente en el centro */
+    justify-content: start; /* Alinea horizontalmente al inicio del contenedor */
     margin-bottom: 2rem;
-    border-radius: 10px;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+    font-size: 2.5rem; /* Ajuste del tamaño del texto */
+    color: #333; /* Color del texto para mejor contraste */
+    width: 100%; /* Asegura que el título ocupe el ancho completo del contenedor */
 }
 
-.Catalogo .contenedor1 input[type="button"],
-.Catalogo .contenedor-audiolibro input[type="button"] {
-    margin-bottom: 3rem;
+
+.corazon img {
+    width: 80px; /* Ajusta el tamaño según sea necesario */
+}
+
+.audiolibro img {
+    width: 80px; /* Ajusta el tamaño según sea necesario */
+}
+
+.texto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 0.2; /* Permite que el área del texto crezca para ocupar el espacio disponible */
+}
+
+.texto input[type="button"] {
     padding: 0.5rem 2rem;
-    border-radius: 50px;
+    border-radius: 25px;
     border: none;
-    background-color: #FFB74B;
-    color: #fff;
-    font-size: 1.2rem;
+    background-color: #ff8c00; /* Color naranja */
+    color: white;
+    font-size: 1.5rem;
     cursor: pointer;
-    transition: all 0.3s ease-in-out;
+    transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra más profunda para un efecto más 3D */
 }
 
-.Catalogo .contenedor1 input[type="button"]:hover,
-.Catalogo .contenedor-audiolibro input[type="button"]:hover {
-    background-color: #FFA726;
+.texto input[type="button"]:hover {
+    background-color: #ff4500; /* Cambia a rojo */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra más ligera al pasar el cursor */
+    transform: translateY(-2px); /* Se eleva ligeramente al pasar el cursor */
 }
 
-.Catalogo .contenedor-audiolibro a {
-    text-decoration: none;
-    margin-left: 2rem;
+.texto input[type="button"]:active {
+    background-color: #e63900; /* Un tono más oscuro de rojo al presionar */
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2); /* Sombra más plana al presionar */
+    transform: translateY(2px); /* Se hunde ligeramente al ser presionado */
 }
 
-.Catalogo .contenedor-audiolibro a img {
+
+
+.imagenes {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5rem;
+}
+
+@keyframes blink {
+    0%, 100% {
+        border-color: orange;
+        box-shadow: 0 0 10px orange;
+    }
+    50% {
+        border-color: transparent;
+        box-shadow: 0 0 5px transparent;
+    }
+}
+
+.imagenes img {
     width: 200px;
+    margin: 0.5rem;
     border-radius: 10px;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+    border: 5px solid orange; /* Borde naranja */
+    box-shadow: 0 0 20px orange; /* Sombra naranja */
+    animation: blink 2s infinite; /* Animación que hace que parpadee el borde y la sombra */
 }
 
-@media (max-width: 768px) {
-    .Catalogo {
-        flex-direction: column;
-    }
-
-    .Catalogo .contenedor1,
-    .Catalogo .contenedor-audiolibro {
-        margin: 2rem 0;
-    }
-
-    .Catalogo .contenedor1 img,
-    .Catalogo .contenedor-audiolibro img {
-        width: 100%;
-    }
-
-    .Catalogo .contenedor-audiolibro a {
-        margin-left: 0;
-        margin-top: 2rem;
-    }
-}
 
 /* Formulario */
 /* Estilos del formulario de contacto */
@@ -282,12 +329,13 @@ nav a:hover {
     max-width: 500px;
     margin: 0 auto;
     padding: 20px;
-    border-radius: 20px; /* Aumentado el radio de borde */
-    background-color: #cdcdcd;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 20px; /* Radio de borde redondeado */
+    background-color: #cdcdcd; /* Color de fondo */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5); /* Sombra más profunda y más extensa */
     margin-top: 35px;
     margin-bottom: 35px;
 }
+
 
 .formulario-contacto h2 {
     font-size: 2rem;
@@ -355,7 +403,7 @@ nav a:hover {
 
 
 footer {
-    background-color: #1d2129;
+    background-color: #000000;
     color: #fff;
     padding: 2rem;
     text-align: center;
@@ -427,7 +475,7 @@ footer {
     align-items: center;
     width: 40px;
     height: 37px;
-    color: #333;
+    color: #000000;
     transition: all 0.3s ease-in-out;
 }
 
