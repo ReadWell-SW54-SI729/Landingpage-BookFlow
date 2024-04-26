@@ -73,6 +73,17 @@ nav a:hover {
     margin-left: 1rem;
 }
 
+@media screen and (max-width: 768px) {
+    nav a {
+      display: none; /* Ocultar todos los enlaces del menú */
+    }
+  
+    .buttom {
+      display: flex; /* Mostrar el contenedor de ÚNETE AQUÍ */
+    }
+  }
+  
+
 /* Estilos del botón ÚNETE AQUÍ */
 .button-link {
     background-color: orange; /* Color de fondo naranja */
