@@ -8,55 +8,45 @@
     <title>Inicio-Sesion</title>
 </head>
 
-<div class="contenedor-principal">
-
-<!-- Cabecera :-->
-<header class="contenedor-arriba">
-    <div class="logo">
-        <img src="/Imagenes/LogoBook.jpeg" alt="LogoBook">
-    </div>
-        <!-- INICIO, NOSOTROS, CATALOGO, CONTACTOS, LOGO -->
-        <nav class="enlaces">
-            <!-- Enlaces de cabecera -->
-            <a href="Inicio.Html">INICIO</a>
-            <a href="Nosotros.html">NOSOTROS</a>
-            <a href="Catalogo.html">CATALOGO</a>
-            <a href="Contactos.html">CONTACTOS</a>
-            <!-- Imagen tipo icono: -->
-            <img class="icono" src="/Imagenes/icono_1.png" alt="icono1" width="20px" height="20px">
-        </nav>
-</header>
-
-<!-- contenedor izq -->
-<div class="contenedor-izquierda">
-    <div class="contenedor-img">
-        <img src="/Imagenes/fondo-iniciosesion.png" alt="Contenedor Fondo de Inicio de Inicio-Sesion">
-    </div>
-</div>
-
-<!-- contenedor derecha -->
-<div class="contenedor-derecha">
-    <div class="contenedor-formulario">
-        <center><h2><b>¡Sé parte de la familia!</b></h2></center>
-        <form action="">
-            <input type="text" placeholder="Nombre de Usuario" id="user" name="user">
-            <br>
-            <br>
-            <input type="password" name="pass" id="pass" placeholder="Contraseña">
-            <br>
-            <br>
-         <input type="button" value="Iniciar Sesión" id="btn1" name="btn1"> 
-            <!-- linea en medio: -->
-            <hr>
-         <center><a href="">¿Olvidaste tu contraseña?</a></center>
-         <br>
-            <a href="Registro.html"><input type="button" value="Registrarse" id="btn2" name="btn2"></a>
-        </form>
-    </div>
-</div>
-
-</div>
 <body>
+
+    <header>
+        <div class="logo"> 
+            <img src="/Imagenes/LogoBook.jpeg" alt="Logo de la empresa BookFlow" width="210" height="70">
+        </div>
+        <nav>
+            <a href="#seccion1">INICIO</a>
+            <a href="#integrantes">NOSOTROS</a>
+            <a href="#catalogo">CATÁLOGO</a>
+            <a href="#contacto">CONTACTOS</a>
+            <div class="buttom">
+                <a href="/public/InicioSesion.html" class="button-link">ÚNETE AQUÍ</a>
+            </div>
+            <img src="/Imagenes/icono_1.png" alt="Icono1" width="30px" height="30px">
+        </nav>
+    </header>
+
+    <div class="container">
+        <form class="login-form">
+          <h2>Login</h2>
+          <div class="input-group">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" required>
+          </div>
+          <div class="input-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+          </div>
+          <a href="home/Catalogue">
+            <button type="button">Login</button>
+          </a>
+        </form>
+        <div class="register-link">
+          <br>
+          <p>¿No tienes una cuenta? <a href="/Registro.html">Regístrate aquí</a>.</p>
+        </div>
+      </div>
+    
     
 </body>
 </html>
